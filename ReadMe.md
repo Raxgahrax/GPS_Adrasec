@@ -5,15 +5,13 @@ Ce projet permet de proposer une solution alternative aux GPS commerciaux, qui p
   
 * Informations de disponibles via l'afficheur :  
 -- Date et heure (en format local).  
--- L'altitude de l'appareil (en format métrique).
--- Coordonnées GPS (en format degrés décimaux). 
+-- L'altitude de l'appareil (en format métrique).  
+-- Coordonnées GPS (en format degrés décimaux).  
 -- Coordonnées MGRS.  
 -- Géolocalisation sous le format d'un QTH.
 
 * Remarque :  
-Vous remarquez dans le code qu'il est fait mention du réseau **Cospas-Sarsat**, réseau satellitaire utilisé pour la localisation de radiobalises liées aux sinistres (``printMessage_1()`` à ``printMessage_13()``); cette partie est purement facultative dans le programme et peut-être totalement supprimée, je l'ai surtout laissée pour la blague et par pur plaisir de geek.
-
-  **--** [Wiki](https://fr.wikipedia.org/wiki/Cospas-Sarsat) du réseau. **--**
+Vous remarquez dans le code qu'il est fait mention du réseau **Cospas-Sarsat**, réseau satellitaire utilisé pour la localisation de radiobalises liées aux sinistres (``printMessage_1()`` à ``printMessage_13()``); cette partie est purement facultative dans le programme et peut-être totalement supprimée, je l'ai surtout laissée pour la blague et par pur plaisir de geek.  **--** [Wiki](https://fr.wikipedia.org/wiki/Cospas-Sarsat) du réseau. **--**
 
 ### Pré-requis
 
@@ -26,26 +24,26 @@ Ce qui est requis pour commencer avec votre projet :
 
 Pour bien débuter, commencez par installer les modules dont vous aurez besoin pour faire fonctionner correctement votre appareil.
 
-_Pour faire fonctionner le module GPS :_
-``sudo apt-get install -y gpsd gpsd-clients python-gps``
-_Pour faire fonctionner le convertiseur des coordonnées GPS :_
-``sudo pip install mgrs``
-_Pour faire fonctionner le module DHT 22 :_ (**facultatif**)
-``sudo pip install Adafruit_DHT``
+_Pour faire fonctionner le module GPS :_  
+``sudo apt-get install -y gpsd gpsd-clients python-gps``  
+_Pour faire fonctionner le convertiseur des coordonnées GPS :_  
+``sudo pip install mgrs``  
+_Pour faire fonctionner le module DHT 22 :_ (**facultatif**)  
+``sudo pip install Adafruit_DHT``  
 
 Vous aurez ensuite le loisir de pouvoir obtenir le résultat sur votre écran.
 
-<img src="https://raw.githubusercontent.com/Raxgahrax/GPS_Adrasec/master/Images/Screen_1.jpg" height= "113"> <img src="https://raw.githubusercontent.com/Raxgahrax/GPS_Adrasec/master/Images/Screen_2.jpg" height= "113"> <img src="https://raw.githubusercontent.com/Raxgahrax/GPS_Adrasec/master/Images/Screen_3.jpg" height= "113">
+<img src="https://raw.githubusercontent.com/Raxgahrax/GPS_Adrasec/master/Images/Screen_1.jpg" height= "155"> <img src="https://raw.githubusercontent.com/Raxgahrax/GPS_Adrasec/master/Images/Screen_2.jpg" height= "155"> <img src="https://raw.githubusercontent.com/Raxgahrax/GPS_Adrasec/master/Images/Screen_3.jpg" height= "155">
 
 ## Démarrage
 
-Pour lancer le programme, n'hésitez pas à vous rendre dans son dossier pour rendre exécutable ``GPS_Adrasec.py``.
-Ensuite rendez-vous dans ``/etc/rc.local`` et y ajouter la ligne suivante:
+Pour lancer le programme, n'hésitez pas à vous rendre dans son dossier pour rendre exécutable ``GPS_Adrasec.py``.  
+Ensuite rendez-vous dans ``/etc/rc.local`` et y ajouter la ligne suivante:  
 ``sudo python /home/_user_/Bureau/GPS/GPS_Adrasec.py`` pour lancer de manière automatique le script dès le démarrage du Raspberry.
 
 * Remarques :
 
-En cas de problèmes de connexion avec votre module GPS, n'hésitez pas à vous référer à [ce lien](https://stackoverflow.com/a/34967951) qui pourra sans doute, solutionnez votre problème.
+En cas de problèmes de connexion avec votre module GPS, n'hésitez pas à vous référer à [ce lien](https://stackoverflow.com/a/34967951) qui pourra sans doute, solutionnez votre problème.  
 Si la date et l'heure viennent à ne pas se synchroniser dès le démarrage, n'hésitez pas à relancer le Raspberry.
 
 ## Fabriqué avec
