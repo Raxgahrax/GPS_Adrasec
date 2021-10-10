@@ -19,6 +19,7 @@ Ce qui est requis pour commencer avec votre projet :
 - GPSd
 - MGRS
 - Adafruit_DHT
+- Savoir faire fonctionner un écran LCD 20x04 via module I2C [tutoriel](https://raspberrypi-tutorials.fr/controlez-un-ecran-lcd-hd44780-via-i2c-avec-le-raspberry-pi/)
 
 ### Installation
 
