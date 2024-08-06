@@ -4,6 +4,7 @@
 # Created for Adrasec 90/70
 # Created : 24/06/19
 # Revised : 21/02/20
+# Source : https://github.com/hobuinc/mgrs
 #--------------------------------------
 
 import os
